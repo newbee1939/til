@@ -1,0 +1,5 @@
+- [ ] AI Agentを組み込む
+    - File Searchとかも使えるかも
+- [ ] 自動でファイルなどを作るShell Script
+    - CLIツール？
+- [ ] //
