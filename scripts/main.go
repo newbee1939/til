@@ -70,8 +70,8 @@ func Slug(s string) string {
 		}
 	}
 	out := strings.Trim(dashRe.ReplaceAllString(spaceRe.ReplaceAllString(b.String(), "-"), "-"), "-")
-	if len(out) > 80 {
-		out = out[:80]
+	if runes := []rune(out); len(runes) > 80 {
+		out = string(runes[:80])
 	}
 	return out
 }
