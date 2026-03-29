@@ -4,6 +4,3 @@ title = "TIL - Today I Learned"
 
 [outputs]
   home = ["HTML", "JSON"]
-
-[markup.goldmark.renderer]
-  unsafe = true
