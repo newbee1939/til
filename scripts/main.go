@@ -211,7 +211,9 @@ func subdirs(dir string, re *regexp.Regexp) ([]string, error) {
 }
 
 func Run(root, contentDir string) (count int, fileCount int, err error) {
-	os.RemoveAll(contentDir)
+	if err := os.RemoveAll(contentDir); err != nil {
+		return 0, 0, fmt.Errorf("failed to remove content directory %s: %w", contentDir, err)
+	}
 	postDir := filepath.Join(contentDir, "posts")
 	if err := os.MkdirAll(postDir, 0755); err != nil {
 		return 0, 0, fmt.Errorf("failed to create posts directory: %w", err)
