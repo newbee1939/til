@@ -110,14 +110,21 @@ func findFiles(root string) ([]srcFile, error) {
 	// --- ステップ1: 「年」フォルダを取得 ---
 	// subdirs(root, yearRe) で、root 直下で「4桁の数字」の名前のフォルダだけを取得。
 	// 例: 2024, 2025 など。years には ["2024", "2025"] のような文字列のスライスが入る。
-	years, _ := subdirs(root, yearRe)
+	years, err := subdirs(root, yearRe)
+	if err != nil {
+		return nil, fmt.Errorf("failed to find year directories in %s: %w", root, err)
+	}
 
 	// 各「年」フォルダの中を見ていく
 	for _, y := range years {
 		// --- ステップ2: 「月」フォルダを取得 ---
 		// filepath.Join(root, y) で「root/2024」のようなパスを作る。
 		// subdirs(..., monthRe) で「2桁の数字」のフォルダだけを取得。例: 01, 12。
-		months, _ := subdirs(filepath.Join(root, y), monthRe)
+		monthDir := filepath.Join(root, y)
+		months, err := subdirs(monthDir, monthRe)
+		if err != nil {
+			return nil, fmt.Errorf("failed to find month directories in %s: %w", monthDir, err)
+		}
 
 		for _, m := range months {
 			// --- ステップ3: 年/月 の中身（ファイル一覧）を読む ---
