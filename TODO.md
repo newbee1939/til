@@ -1,5 +1,9 @@
 - [ ] AI Agentを組み込む
     - File Searchとかも使えるかも
-- [ ] 自動でファイルなどを作るShell Script
+- [ ] 自動でTILのファイルなどを作るShell Script
     - CLIツール？
+- [ ] テストコードの追加
+- [ ] お気に入りTILの表示機能
+- [ ] GoのLinterとFormatterの導入
+- [ ] 保存時の自動フォーマット
 - [ ] //

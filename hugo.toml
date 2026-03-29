@@ -1,0 +1,6 @@
+baseURL = "https://newbee1939.github.io/til/"
+languageCode = "ja"
+title = "TIL - Today I Learned"
+
+[outputs]
+  home = ["HTML", "JSON"]

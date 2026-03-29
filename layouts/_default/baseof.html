@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ (resources.Get "css/style.css" | resources.Fingerprint).Permalink }}">
+</head>
+<body>
+  <header>
+    <nav class="container header">
+      <a href="{{ .Site.Home.RelPermalink }}" class="logo">{{ .Site.Title }}</a>
+      <div class="nav-links"><a href="{{ "search/" | relURL }}">検索</a></div>
+    </nav>
+  </header>
+  <main class="container">{{ block "main" . }}{{ end }}</main>
+  <footer class="container"><p>&copy; {{ now.Year }} {{ .Site.Title }}</p></footer>
+</body>
+</html>

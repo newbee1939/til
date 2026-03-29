@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>TIL - Today I Learned</h1>
+
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ range ($posts.ByDate.Reverse).GroupByDate "2006/01/02" }}
+  <h2 class="date-heading">{{ .Key }}</h2>
+  {{ range .Pages }}
+    {{ partial "entry-card.html" . }}
+  {{ end }}
+{{ end }}
+{{ end }}
