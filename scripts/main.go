@@ -168,14 +168,21 @@ func findFiles(root string) ([]srcFile, error) {
 
 				// --- 画像ファイルの場合 ---
 				// imgExt は .png, .jpg などのマップ。この拡張子なら画像として扱う。
-				if imgExt[ext] {
-					// コピー先: static/images/年/月/元のファイル名
-					dest := filepath.Join(root, "static", "images", y, m, name)
-					// コピー先のフォルダが無ければ作成（0755 は一般的なディレクトリの権限）
-					os.MkdirAll(filepath.Dir(dest), 0755)
-					data, _ := os.ReadFile(filepath.Join(path, name))
-					os.WriteFile(dest, data, 0644)
+			if imgExt[ext] {
+				// コピー先: static/images/年/月/元のファイル名
+				dest := filepath.Join(root, "static", "images", y, m, name)
+				// コピー先のフォルダが無ければ作成（0755 は一般的なディレクトリの権限）
+				if err := os.MkdirAll(filepath.Dir(dest), 0755); err != nil {
+					return nil, fmt.Errorf("failed to create directory for image %s: %w", dest, err)
 				}
+				data, err := os.ReadFile(filepath.Join(path, name))
+				if err != nil {
+					return nil, fmt.Errorf("failed to read image %s: %w", name, err)
+				}
+				if err := os.WriteFile(dest, data, 0644); err != nil {
+					return nil, fmt.Errorf("failed to write image %s: %w", dest, err)
+				}
+			}
 			}
 		}
 	}
@@ -206,13 +213,18 @@ func subdirs(dir string, re *regexp.Regexp) ([]string, error) {
 func Run(root, contentDir string) (count int, fileCount int, err error) {
 	os.RemoveAll(contentDir)
 	postDir := filepath.Join(contentDir, "posts")
-	os.MkdirAll(postDir, 0755)
+	if err := os.MkdirAll(postDir, 0755); err != nil {
+		return 0, 0, fmt.Errorf("failed to create posts directory: %w", err)
+	}
 	files, err := findFiles(root)
 	if err != nil {
 		return 0, 0, err
 	}
 	for _, f := range files {
-		body, _ := os.ReadFile(f.Path)
+		body, err := os.ReadFile(f.Path)
+		if err != nil {
+			return 0, 0, fmt.Errorf("failed to read file %s: %w", f.Path, err)
+		}
 		date := f.Year + "-" + f.Month + "-" + f.Day
 		daily := f.Year + "/" + f.Month + "/" + f.Day
 		for i, e := range Split(string(body)) {
@@ -221,23 +233,38 @@ func Run(root, contentDir string) (count int, fileCount int, err error) {
 				s = "entry-" + strconv.Itoa(i+1)
 			}
 			fm := "---\ntitle: \"" + strings.ReplaceAll(e.Title, `"`, `\"`) + "\"\ndate: " + date + "\ndaily: \"" + daily + "\"\n---"
-			os.WriteFile(filepath.Join(postDir, date+"-"+s+".md"), []byte(fm+"\n\n"+e.Body+"\n"), 0644)
+			outPath := filepath.Join(postDir, date+"-"+s+".md")
+			if err := os.WriteFile(outPath, []byte(fm+"\n\n"+e.Body+"\n"), 0644); err != nil {
+				return 0, 0, fmt.Errorf("failed to write post %s: %w", outPath, err)
+			}
 			count++
 		}
 	}
-	writeIndex(postDir, "すべてのエントリ")
+	if err := writeIndex(postDir, "すべてのエントリ"); err != nil {
+		return 0, 0, err
+	}
 	searchDir := filepath.Join(contentDir, "search")
-	os.MkdirAll(searchDir, 0755)
-	writeIndex(searchDir, "検索")
+	if err := os.MkdirAll(searchDir, 0755); err != nil {
+		return 0, 0, fmt.Errorf("failed to create search directory: %w", err)
+	}
+	if err := writeIndex(searchDir, "検索"); err != nil {
+		return 0, 0, err
+	}
 	return count, len(files), nil
 }
 
-func writeIndex(dir, title string) {
-	os.WriteFile(filepath.Join(dir, "_index.md"), []byte("---\ntitle: "+title+"\n---\n"), 0644)
+func writeIndex(dir, title string) error {
+	if err := os.WriteFile(filepath.Join(dir, "_index.md"), []byte("---\ntitle: "+title+"\n---\n"), 0644); err != nil {
+		return fmt.Errorf("failed to write index file in %s: %w", dir, err)
+	}
+	return nil
 }
 
 func main() {
-	root, _ := filepath.Abs(".")
+	root, err := filepath.Abs(".")
+	if err != nil {
+		log.Fatalf("failed to get absolute path: %v", err)
+	}
 	n, files, err := Run(root, filepath.Join(root, "content"))
 	if err != nil {
 		log.Fatal(err)
