@@ -9,7 +9,7 @@
 <script>
 (function() {
   let entries = [];
-  fetch({{ "index.json" | relURL }})
+  fetch('{{ "index.json" | relURL }}')
     .then(r => r.json())
     .then(data => { entries = data; });
 
