@@ -9,7 +9,8 @@ import (
 	"sort"
 	"strconv"
 	"strings"
-	"unicode"
+
+	"gopkg.in/yaml.v3"
 )
 
 var (
@@ -61,11 +62,16 @@ type entry struct{ Title, Body string }
 
 type srcFile struct{ Path, Year, Month, Day string }
 
+type frontMatter struct {
+	Title string `yaml:"title"`
+	Date  string `yaml:"date"`
+	Daily string `yaml:"daily"`
+}
+
 func Slug(s string) string {
 	var b strings.Builder
 	for _, r := range strings.ToLower(s) {
-		if (r >= 'a' && r <= 'z') || (r >= '0' && r <= '9') || r == '_' || r == '-' ||
-			unicode.IsSpace(r) || (r >= 0x3000 && r <= 0x9fff) || (r >= 0xff00 && r <= 0xffef) {
+		if (r >= 'a' && r <= 'z') || (r >= '0' && r <= '9') || r == '_' || r == '-' || r == ' ' {
 			b.WriteRune(r)
 		}
 	}
@@ -234,9 +240,13 @@ func Run(root, contentDir string) (count int, fileCount int, err error) {
 			if s == "" {
 				s = "entry-" + strconv.Itoa(i+1)
 			}
-			fm := "---\ntitle: \"" + strings.ReplaceAll(e.Title, `"`, `\"`) + "\"\ndate: " + date + "\ndaily: \"" + daily + "\"\n---"
+			fm := frontMatter{Title: e.Title, Date: date, Daily: daily}
+			fmBytes, err := yaml.Marshal(fm)
+			if err != nil {
+				return 0, 0, fmt.Errorf("failed to marshal frontmatter for %q: %w", e.Title, err)
+			}
 			outPath := filepath.Join(postDir, date+"-"+s+".md")
-			if err := os.WriteFile(outPath, []byte(fm+"\n\n"+e.Body+"\n"), 0644); err != nil {
+			if err := os.WriteFile(outPath, []byte("---\n"+string(fmBytes)+"---\n\n"+e.Body+"\n"), 0644); err != nil {
 				return 0, 0, fmt.Errorf("failed to write post %s: %w", outPath, err)
 			}
 			count++

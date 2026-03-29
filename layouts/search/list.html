@@ -17,29 +17,33 @@
   const results = document.getElementById("results");
   const status = document.getElementById("status");
 
+  let debounceTimer;
   input.addEventListener("input", function() {
-    const q = this.value.trim().toLowerCase();
-    if (q.length < 2) { results.textContent = ""; status.textContent = ""; return; }
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      const q = input.value.trim().toLowerCase();
+      if (q.length < 2) { results.textContent = ""; status.textContent = ""; return; }
 
-    const hits = entries.filter(e =>
-      e.title.toLowerCase().includes(q) || e.content.toLowerCase().includes(q)
-    );
+      const hits = entries.filter(e =>
+        e.title.toLowerCase().includes(q) || e.content.toLowerCase().includes(q)
+      );
 
-    results.textContent = "";
-    if (hits.length) {
-      status.textContent = hits.length + " 件見つかりました";
-      hits.forEach(e => {
-        const card = document.createElement("div");
-        card.className = "card";
-        const link = document.createElement("a");
-        link.href = e.url;
-        link.textContent = e.title;
-        card.appendChild(link);
-        results.appendChild(card);
-      });
-    } else {
-      status.textContent = "見つかりませんでした";
-    }
+      results.textContent = "";
+      if (hits.length) {
+        status.textContent = hits.length + " 件見つかりました";
+        hits.forEach(e => {
+          const card = document.createElement("div");
+          card.className = "card";
+          const link = document.createElement("a");
+          link.href = e.url;
+          link.textContent = e.title;
+          card.appendChild(link);
+          results.appendChild(card);
+        });
+      } else {
+        status.textContent = "見つかりませんでした";
+      }
+    }, 300);
   });
 })();
 </script>

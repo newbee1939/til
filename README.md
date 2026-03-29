@@ -22,7 +22,7 @@
 Markdown 内では以下のように参照する:
 
 ```markdown
-![説明](/til/images/2024/10/image.png)
+![説明](/images/2024/10/image.png)
 ```
 
 ## セットアップ
