@@ -5,4 +5,6 @@
 - クリティカルユーザージャーニー（CUJ: Critical User Journey）
 - Redash
 - Atlantis: Terraform
+- Macを軽くする
+    - Storage容量
 - //
