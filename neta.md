@@ -7,4 +7,17 @@
 - Atlantis: Terraform
 - Macを軽くする
     - Storage容量
+- ⭐️Cloudflare Zero TrustやWARPのアーキテクチャ
+- CORSの復習
+- MDMの仕組み
+    - Intune
+- Claude Code: .claude/keybindings.json
+- printenvコマンド
+- signoz
+- df -h /
+- .npmrc
+- Production Readiness Check
+- 証明書チェーン
+    - ルートCA証明書
+    - 中間証明書
 - //
