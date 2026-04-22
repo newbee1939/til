@@ -12,6 +12,7 @@
 - MDMの仕組み
     - Intune
 - Claude Code: .claude/keybindings.json
+- Lucky Thirteen攻撃
 - printenvコマンド
 - signoz
 - df -h /
@@ -20,4 +21,6 @@
 - 証明書チェーン
     - ルートCA証明書
     - 中間証明書
+- Go Wiki: Go Code Review Comments
+    - https://go.dev/wiki/CodeReviewComments
 - //
