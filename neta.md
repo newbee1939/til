@@ -4,10 +4,8 @@
 - パイロットチーム
 - クリティカルユーザージャーニー（CUJ: Critical User Journey）
 - Redash
-- Atlantis: Terraform
 - Macを軽くする
     - Storage容量
-- ⭐️Cloudflare Zero TrustやWARPのアーキテクチャ
 - CORSの復習
 - MDMの仕組み
     - Intune
@@ -24,3 +22,15 @@
 - Go Wiki: Go Code Review Comments
     - https://go.dev/wiki/CodeReviewComments
 - //
+- ルート証明書
+- 証明書の検証の詳細な流れ
+- ルート証明書
+- Cloudflare TLS Inspection
+- UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+- Cloudflare TLS Decryption
+- Cloudflare Zero Trustの通信の流れ
+- User-side certificates
+    - https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/user-side-certificates/
+- Install certificate manually
+    - https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/user-side-certificates/manual-deployment/
+- http request failed unable to get local issuer certificate
