@@ -3,6 +3,8 @@
 - [ ] 自動でTILのファイルなどを作るShell Script
     - CLIツール？
 - [ ] テストコードの追加
+- [ ] 楽しいインフラエンジニア入門
+    - https://zenn.dev/mozumasu/articles/mozumasu-infra-beginner
 - [ ] お気に入りTILの表示機能
     - ⭐️が付いているもの
 - [ ] マークダウンをそのまま表示する機能も付けたい
