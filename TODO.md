@@ -21,4 +21,6 @@
 - [ ] textlintの導入
 - [ ] SEO
 - [ ] 日報のフォーマット作成（Skill？）
+- [ ] ITインフラの基礎「サーバーの構成要素⁠⁠、仮想化⁠⁠、コンテナ技術」を押さえよう
+    - https://gihyo.jp/article/2026/04/it-infra-essentials
 - [ ] //
