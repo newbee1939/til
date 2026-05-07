@@ -23,4 +23,6 @@
 - [ ] 日報のフォーマット作成（Skill？）
 - [ ] ITインフラの基礎「サーバーの構成要素⁠⁠、仮想化⁠⁠、コンテナ技術」を押さえよう
     - https://gihyo.jp/article/2026/04/it-infra-essentials
-- [ ] //
+- [ ] ヘッダースプーフィング
+- [ ] osascript
+- [ ] n8n: N8N_PROXY_HOPS
