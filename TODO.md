@@ -29,3 +29,6 @@
 - Go言語で作るインタプリタ
 - 効率的なGo
 - Go言語による並行処理
+- githubで人生を管理する: https://zenn.dev/hand_dot/articles/85c9640b7dcc66
+- 毎日の作業を Claude Code 経由にしたら、 ノウハウがコードになった: https://speakerdeck.com/kossykinto/turning-daily-work-into-code-with-claude-code-skills
+- 思いつきで作ったAIツールが5000スターを獲得した話: https://zenn.dev/yamadashy/articles/ai-tool-repomix-5000-star
