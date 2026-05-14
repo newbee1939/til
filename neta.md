@@ -13,7 +13,6 @@
 - Lucky Thirteen攻撃
 - printenvコマンド
 - signoz
-- df -h /
 - .npmrc
 - Production Readiness Check
 - 証明書チェーン
@@ -24,7 +23,6 @@
 - //
 - ルート証明書
 - 証明書の検証の詳細な流れ
-- ルート証明書
 - Cloudflare TLS Inspection
 - UNABLE_TO_GET_ISSUER_CERT_LOCALLY
 - Cloudflare TLS Decryption
