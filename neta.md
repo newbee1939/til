@@ -4,6 +4,8 @@
 - パイロットチーム
 - クリティカルユーザージャーニー（CUJ: Critical User Journey）
 - Redash
+- ペネとレーションテスト
+- VPC Service Controls
 - Macを軽くする
     - Storage容量
 - CORSの復習
