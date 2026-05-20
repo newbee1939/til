@@ -35,3 +35,4 @@
     - https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/user-side-certificates/manual-deployment/
 - http request failed unable to get local issuer certificate
 - PKCE
+- githubのトークンの種類
