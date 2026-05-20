@@ -36,3 +36,6 @@
 - http request failed unable to get local issuer certificate
 - PKCE
 - githubのトークンの種類
+- https://reisuta.com/strong-engineer/
+- https://zenn.dev/kinniku_coder/articles/2025-08-06-engineer_routine
+- https://qiita.com/akiralab/items/416bbd96122f9251fcf7
