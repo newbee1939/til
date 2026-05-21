@@ -22,7 +22,6 @@
     - 中間証明書
 - Go Wiki: Go Code Review Comments
     - https://go.dev/wiki/CodeReviewComments
-- //
 - ルート証明書
 - 証明書の検証の詳細な流れ
 - Cloudflare TLS Inspection
