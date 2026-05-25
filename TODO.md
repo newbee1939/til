@@ -26,9 +26,13 @@
 - [ ] ヘッダースプーフィング
 - [ ] osascript
 - [ ] n8n: N8N_PROXY_HOPS
+- [ ] CLAUDE.md
 - Go言語で作るインタプリタ
 - 効率的なGo
 - Go言語による並行処理
 - githubで人生を管理する: https://zenn.dev/hand_dot/articles/85c9640b7dcc66
 - 毎日の作業を Claude Code 経由にしたら、 ノウハウがコードになった: https://speakerdeck.com/kossykinto/turning-daily-work-into-code-with-claude-code-skills
 - 思いつきで作ったAIツールが5000スターを獲得した話: https://zenn.dev/yamadashy/articles/ai-tool-repomix-5000-star
+- 日頃から「なぜこの技術を使っているのか」「この技術の長所と短所は何か」「代替手段と比較してどうか」といったことを言語化する習慣をつけるためのTILのテンプレ
+    - CLAUDE.mdにルールを記載してもいいかも
+    - アウトプットしながら自動で日報を作れるように

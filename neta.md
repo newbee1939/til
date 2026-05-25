@@ -38,3 +38,4 @@
 - https://reisuta.com/strong-engineer/
 - https://zenn.dev/kinniku_coder/articles/2025-08-06-engineer_routine
 - https://qiita.com/akiralab/items/416bbd96122f9251fcf7
+- https://adventar.org/calendars/12295
