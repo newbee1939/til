@@ -39,3 +39,25 @@
 - https://zenn.dev/kinniku_coder/articles/2025-08-06-engineer_routine
 - https://qiita.com/akiralab/items/416bbd96122f9251fcf7
 - https://adventar.org/calendars/12295
+
+## ⭐️個人開発・セキュリティ
+
+### 個人開発でシステムを作る場合の注意点その1（HTTP、クッキー、パスワードの管理、XSS、HttpOnle属性、API権限）
+
+https://www.higlabo.ai/blog/higty-tech/indie-dev-security-mistakes-1
+
+### 個人開発でシステムを作る場合の注意点その2（CSP、HSTS、CORS、CSRF）
+
+https://www.higlabo.ai/blog/higty-tech/indie-dev-security-mistakes-2
+
+## 30分でわかるデータ指向アプリケーションデザイン
+
+https://speakerdeck.com/xerial/30fen-dewakarudetazhi-xiang-apurikesiyondezain-data-engineering-study-number-18
+
+## 【書評】データ指向アプリケーションデザインを読了して見える世界
+
+https://okb-shelf.hatenablog.com/entry/data_application_design
+
+## eBPFとは？
+
+https://ebpf.io/ja/what-is-ebpf/
