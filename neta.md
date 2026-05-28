@@ -68,10 +68,6 @@ https://learn.microsoft.com/ja-jp/entra/identity/enterprise-apps/what-is-single-
 
 シングルサインオンの仕組み
 
-### アクセス トークンを使用したアプリケーション ディレクトリの認証
-
-https://docs.cloud.google.com/compute/docs/access/authenticate-workloads?hl=ja#applications
-
 ## Google Cloud における認証・認可の仕組みがこれを見ればおおよそわかる
 
 https://zenn.dev/cloud_ace_jp/articles/f46fb1868249d7
