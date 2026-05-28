@@ -83,3 +83,11 @@ https://qiita.com/yuji38kwmt/items/b3a7820b4d3b544da4ff
 ## ⭐️アプリケーションのデフォルト認証情報の仕組み
 
 https://docs.cloud.google.com/docs/authentication/application-default-credentials?hl=ja
+
+## 【図解】【3分解説】UnicodeとUTF-8の違い！【今さら聞けない】
+
+https://qiita.com/omiita/items/50814037af2fd8b2b21e
+
+## unicodeとは？文字コードとは？UTF-8とは？
+
+https://qiita.com/hiroyuki_mrp/items/f0b497394f3a5d8a8395
