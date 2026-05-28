@@ -71,3 +71,11 @@ https://learn.microsoft.com/ja-jp/entra/identity/enterprise-apps/what-is-single-
 ## Google Cloud における認証・認可の仕組みがこれを見ればおおよそわかる
 
 https://zenn.dev/cloud_ace_jp/articles/f46fb1868249d7
+
+## 知っておきたい！ 文字コードの基礎知識
+
+https://gihyo.jp/book/pickup/2019/0006
+
+## 新人さんに知ってほしい「文字コードのお話」
+
+https://qiita.com/yuji38kwmt/items/b3a7820b4d3b544da4ff
