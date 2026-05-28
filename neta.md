@@ -79,3 +79,7 @@ https://gihyo.jp/book/pickup/2019/0006
 ## 新人さんに知ってほしい「文字コードのお話」
 
 https://qiita.com/yuji38kwmt/items/b3a7820b4d3b544da4ff
+
+## ⭐️アプリケーションのデフォルト認証情報の仕組み
+
+https://docs.cloud.google.com/docs/authentication/application-default-credentials?hl=ja
