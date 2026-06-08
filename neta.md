@@ -1,3 +1,4 @@
+- ⭐️memoのTODO.mdを全部やる
 - Sentry
 - eBPF
 - 低レイヤー
@@ -16,6 +17,7 @@
 - Claude Code: .claude/keybindings.json
 - Lucky Thirteen攻撃
 - printenvコマンド
+- IP/サブネット 読み方など整理。CIDR
 - signoz
 - .npmrc
 - Production Readiness Check
