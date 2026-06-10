@@ -1,6 +1,4 @@
 - ⭐️memoのTODO.mdを全部やる
-- Google Workspace ドメイン全体の権限の委任を実行する
-    - https://developers.google.com/workspace/cloud-search/docs/guides/delegation?hl=ja
 - Sentry
 - eBPF
 - 低レイヤー
