@@ -1,3 +1,5 @@
+- bashのプロセス置換について
+- >&2
 - ⭐️memoのTODO.mdを全部やる
 - Sentry
 - eBPF
