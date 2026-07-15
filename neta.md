@@ -1,3 +1,6 @@
+- 60分で学ぶ最新Webフロントエンド
+    - https://speakerdeck.com/mizdra/geek-camp-2026-frontend?slide=3
+- vm_stat
 - goroutineを理解する
     - バファつきチャネル
     - goroutine
@@ -20,8 +23,6 @@
 - GO:言語 selectブロック
 - SBOM
     - フレームワークとかベストプラクティスある？
-- QUERYメソッド
-    - HTTPの最新の仕様
 - 新卒一括採用はもう限界か　AI時代に“内定が出ない”人材とは
     - https://www.itmedia.co.jp/business/articles/2607/02/news007.html
 
