@@ -1,3 +1,35 @@
+- goroutineを理解する
+    - バファつきチャネル
+    - goroutine
+    - channel
+    - context
+- https://httpd.apache.org/docs/current/ja/howto/htaccess.html
+    - いつ .htaccess ファイルを使う(使わない)か。 ¶
+- Goの特徴
+    - シングルバイナリ
+    - クロスコンパイル
+- Cloud SQL IAM認証
+    - Googleの推奨
+- Go: context
+- Goのゴルーチン、コンテキスト、チャネルの関係性
+- Linux: プロセススケジューラ
+    - 本の内容
+- bashのパラメータ展開の記法について。${var:-default}みたいな
+- Goルーチン
+- Cloudflare AI Gateway
+- GO:言語 selectブロック
+- SBOM
+    - フレームワークとかベストプラクティスある？
+- QUERYメソッド
+    - HTTPの最新の仕様
+- 新卒一括採用はもう限界か　AI時代に“内定が出ない”人材とは
+    - https://www.itmedia.co.jp/business/articles/2607/02/news007.html
+
+- groupsコマンド
+- 証明書の仕組み。ハンドシェイク。SNI
+
+- go mod download
+
 ## 1. SREのコアコンセプト（マインドセットと指標）
 
 * **SLI / SLO / SLA**
