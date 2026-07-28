@@ -1,3 +1,22 @@
+- terraformのstateロック
+- tilのテーマを自動で決めるskill
+- TypeScript：レスト構文とスプレッド構文 (...) の違い
+- 抽象の壁を一つ破って深ぼる
+- AWSの公式オンラインワークショップ、無料のAWSサンドボックス環境を提供開始。学習用にAWSのサービスやコード実行など利用可能に
+    - https://www.publickey1.jp/blog/26/awsawsaws.html
+- AIのトークン価格を10分の1にできる「プロンプトキャッシュ」の仕組みとは？
+    - https://gigazine.net/news/20260727-prompt-caching/
+- Goのバッファなしチャネルとバッファありチャネルの違いを実際に動かしながら理解する
+- cobolに入門してみた。2026年に
+- 自分の言葉でアウトプットできるような仕組みを作る
+- マルチテナントとは？？cloud sql
+- cloudrunはインスタンスごとにローカルディスクが使い捨てになる
+- ステートレスなmcpの仕様を調査
+    - https://modelcontextprotocol.io/specification/draft
+    - 理解する
+- gcs fuse
+- posixとは
+- rum(リアルユーザーモニタリング)
 - 60分で学ぶ最新Webフロントエンド
     - https://speakerdeck.com/mizdra/geek-camp-2026-frontend?slide=3
 - vm_stat
