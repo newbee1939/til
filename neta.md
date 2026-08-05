@@ -1,9 +1,15 @@
+- caffeinate コマンド
+- graphic board
+- Arch Linux AURについて
+- FreeBSD
+- HTTP/3
+- mDNS・VPN の split DNS
+- XOR ^ について
+- PQCの仕組みについて。暗号アルゴリズム
 - terraformのstateロック
 - tilのテーマを自動で決めるskill
 - TypeScript：レスト構文とスプレッド構文 (...) の違い
 - 抽象の壁を一つ破って深ぼる
-- AWSの公式オンラインワークショップ、無料のAWSサンドボックス環境を提供開始。学習用にAWSのサービスやコード実行など利用可能に
-    - https://www.publickey1.jp/blog/26/awsawsaws.html
 - AIのトークン価格を10分の1にできる「プロンプトキャッシュ」の仕組みとは？
     - https://gigazine.net/news/20260727-prompt-caching/
 - Goのバッファなしチャネルとバッファありチャネルの違いを実際に動かしながら理解する
