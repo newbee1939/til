@@ -1,3 +1,7 @@
+- google cloud adcの仕組みを深堀
+- Pythonのパッケージについて
+    - https://findy-code.io/media/articles/chotto-wakaru-python
+- wireshark
 - caffeinate コマンド
 - graphic board
 - Arch Linux AURについて

@@ -1,5 +1,19 @@
+- 日報のフォーマット見直し
+    - その日の学びをサマリーするときに、理解度質問を一つする
+    - 内省を積み重ねるのを仕組み化したい
+- gemma4 ヘルメス
+- Honor Origin
+- ネガティブキャッシュのベストプラクティスについて
+- TILの内容から1問1問を出させるSkill
+- Claude Platform Docs
+    - Prompt Caching
+- なるべく抽象度を高めた学びに昇華する
 - [ ] AI Agentを組み込む
     - File Searchとかも使えるかも
+- Cloud Run Autoscaler
+- L7, L4
+- asn as number
+- wireshark ネットワークの流れをビジュアライズ
 - [ ] ゴール（低レイヤー、高レイヤーを伸ばす）から逆算して今日のテーマを決めるSkill
 - [ ] 自動でTILのファイルなどを作るShell Script
     - CLIツール？
