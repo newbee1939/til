@@ -2,6 +2,7 @@
 - Pythonのパッケージについて
     - https://findy-code.io/media/articles/chotto-wakaru-python
 - wireshark
+- 量子コンピュータ
 - caffeinate コマンド
 - graphic board
 - Arch Linux AURについて
