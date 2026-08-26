@@ -30,7 +30,6 @@
 - rum(リアルユーザーモニタリング)
 - 60分で学ぶ最新Webフロントエンド
     - https://speakerdeck.com/mizdra/geek-camp-2026-frontend?slide=3
-- vm_stat
 - goroutineを理解する
     - バファつきチャネル
     - goroutine
@@ -41,8 +40,6 @@
 - Goの特徴
     - シングルバイナリ
     - クロスコンパイル
-- Cloud SQL IAM認証
-    - Googleの推奨
 - Go: context
 - Goのゴルーチン、コンテキスト、チャネルの関係性
 - Linux: プロセススケジューラ
@@ -146,7 +143,6 @@
 - Claude Code: .claude/keybindings.json
 - Lucky Thirteen攻撃
 - IP/サブネット 読み方など整理。CIDR
-- signoz
 - .npmrc
 - Production Readiness Check
 - 証明書チェーン
